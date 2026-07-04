@@ -28,6 +28,405 @@ UNAB — Smart Regions Center | Colegio Caldas
 **Nota metodológica:** cada subtema corresponde a un video independiente de máximo 10 minutos de voz en off (10 diapositivas, ~90-120 palabras de narración por diapositiva). Las diapositivas evitan saturación de texto; el desarrollo conceptual completo vive en las notas del narrador.
 
 ---
+
+# 🔷 BLOQUE 1
+## Del Prompt al Diseño Instruccional
+### Fuentes institucionales de este bloque: *Orientaciones académicas para el uso ético, responsable y transparente de la IA* (Equipo IA UNAB, mayo 2026) y *Proyecto Educativo Institucional* (PEI-UNAB, 2012)
+
+---
+
+## VIDEO 1.1 — Lineamientos IA-UNAB 2026 y PEI en la era de la IA
+
+### Diapositiva 1 — De la introducción a la práctica
+**Contenido:**
+- Cierre de la introducción teórica. Inicio del trabajo aplicado del curso
+- Bloque 1: Del Prompt al Diseño Instruccional
+- Primer video: el marco institucional que rige todo lo que haremos
+
+**Notas del narrador:**
+Bienvenidos al primer bloque práctico del curso. Todo lo que construyamos a partir de aquí —prompts, actividades, rúbricas— debe apoyarse en dos documentos que ya existen en nuestra institución: las Orientaciones académicas para el uso ético, responsable y transparente de la Inteligencia Artificial, publicadas por el Equipo IA UNAB en mayo de 2026, y el Proyecto Educativo Institucional. Este video no es un trámite administrativo: es el mapa que evita que cada docente reinvente sus propias reglas sobre la marcha. Antes de escribir un solo prompt, necesitamos saber qué dice la UNAB sobre cómo debe usarse la IA en la formación.
+
+### Diapositiva 2 — El enfoque institucional en una frase
+**Contenido:**
+- Principio rector: la IA complementa, no reemplaza, el criterio humano
+- La responsabilidad última de cualquier producto académico recae en las personas
+- La IA se entiende como apoyo a las capacidades humanas, no como sustituto
+
+**Notas del narrador:**
+El documento institucional lo resume en una frase que conviene memorizar: la IA complementa y no reemplaza el criterio humano. Esto no es una frase decorativa; tiene una consecuencia operativa directa: la responsabilidad última de cualquier producto académico, investigativo o administrativo recae siempre en la persona que lo genera, supervisa o valida, nunca en la herramienta. La UNAB concibe la IA como un apoyo para ampliar las capacidades humanas y fomentar el pensamiento crítico, no como un reemplazo de ellas. Cada decisión de diseño que tomemos en este curso —qué le pedimos a Gemini, qué validamos de NotebookLM— debe poder justificarse desde este principio rector.
+
+### Diapositiva 3 — Las herramientas de IA de acceso institucional
+**Contenido:**
+- Gemini for Education: asistente de propósito general para ideación y explicación de conceptos
+- NotebookLM: asistente de investigación anclado en las fuentes que el usuario suministra
+- Copilot, Turnitin, Turnitin Draft Coach y Scopus AI completan el ecosistema institucional
+
+**Notas del narrador:**
+El documento institucional incluye una tabla precisa con las herramientas de IA de acceso institucional y su uso académico recomendado. Gemini for Education se recomienda para apoyo en redacción inicial, ideación y explicación de conceptos, siempre orientado a promover autonomía y pensamiento crítico. NotebookLM se define como un asistente orientado al trabajo sobre fuentes suministradas por el usuario, ideal para síntesis y comparación de ideas. El ecosistema se completa con el Chat de Copilot para búsquedas y borradores, Turnitin y Turnitin Draft Coach para integridad académica, y Scopus AI para investigación. Estas son, exactamente, las herramientas que usaremos en los Bloques 2 y 3 de este curso.
+
+### Diapositiva 4 — Las limitaciones que cada herramienta declara
+**Contenido:**
+- Gemini: puede generar información imprecisa o sesgada, no sustituye el criterio humano
+- NotebookLM: puede simplificar en exceso u omitir matices, no reemplaza la lectura crítica
+- Ninguna herramienta se asume como fuente definitiva
+
+**Notas del narrador:**
+Lo más valioso de esta tabla institucional no son las funciones de cada herramienta, sino sus límites declarados explícitamente. Sobre Gemini, el documento advierte que puede generar información imprecisa o sesgada, por lo que no debe asumirse como fuente definitiva ni sustituir el criterio humano. Sobre NotebookLM, advierte que puede simplificar en exceso u omitir matices, y que no debe reemplazar la lectura crítica de las fuentes ni la interpretación académica del estudiante. Conocer estas limitaciones no es un ejercicio de desconfianza: es la base técnica sobre la que construiremos, en el Bloque 2, un uso responsable de NotebookLM como Cerebro Digital de su asignatura.
+
+### Diapositiva 5 — Los tres principios éticos institucionales
+**Contenido:**
+- Responsabilidad: la autoría y el juicio crítico siempre recaen en las personas
+- Transparencia: el uso de IA debe declararse de forma explícita y comprensible
+- Equidad: la IA debe reducir, no ampliar, las brechas educativas
+
+**Notas del narrador:**
+Las Orientaciones institucionales organizan su ética en tres ejes que estructurarán el resto de este curso: responsabilidad, transparencia y equidad. La responsabilidad exige reconocer que ningún sistema de IA sustituye la autoría, el juicio crítico ni la integridad académica de estudiantes, profesores o investigadores. La transparencia exige que el uso de la IA sea explícito y trazable: se debe declarar cuándo, cómo y para qué se utiliza. La equidad orienta el uso de la IA hacia la reducción, y no la ampliación, de brechas educativas y sociales. Estos tres principios no son abstractos: los aplicaremos directamente al diseñar el prompt socrático de este bloque.
+
+### Diapositiva 6 — Usos permitidos para estudiantes, según la UNAB
+**Contenido:**
+- Buscar información, analizar textos y generar ejemplos, validando con fuentes confiables
+- Elaborar planes de estudio personalizados y practicar con preguntas de repaso
+- Declarar y citar toda producción que utilice IA, según las normas del programa
+
+**Notas del narrador:**
+El documento institucional es explícito sobre lo que sí está permitido a los estudiantes: utilizar la IA para buscar información, analizar textos, generar ejemplos o resolver dudas, siempre validando con fuentes confiables y considerando posibles sesgos; elaborar planes de estudio personalizados; practicar con ejemplos y preguntas de repaso; y reconocer sesgos y errores fácticos como ejercicio formativo. La condición que atraviesa todas estas prácticas permitidas es la declaración: la UNAB establece como obligatorio citar el uso de la IA en todos los casos, especificando qué herramienta se usó, para qué, con qué prompts y qué aportó el estudiante. Esta nota será clave cuando diseñemos evaluación en el Bloque 4.
+
+### Diapositiva 7 — Usos NO permitidos, sin ambigüedad
+**Contenido:**
+- Compartir datos personales o institucionales con herramientas de IA abiertas
+- Presentar como propio contenido de IA sin contribución intelectual sustancial y verificable
+- Emplear evasores de IA o humanizadores de texto
+
+**Notas del narrador:**
+El documento institucional también señala, sin ambigüedad, las prácticas no permitidas: compartir datos personales o institucionales con herramientas de IA abiertas; usar la IA en evaluaciones o exámenes cuando no esté explícitamente autorizado; presentar como producción propia textos, código o análisis generados por IA sin una contribución intelectual sustancial y verificable, porque esta práctica sustituye el aprendizaje en lugar de potenciarlo; y emplear evasores de IA o humanizadores para ocultar su uso. El documento es claro en que estas prácticas contravienen la integridad académica y serán tratadas conforme a la normativa institucional. Conocer estas líneas rojas de antemano es lo que nos permitirá diseñar acuerdos de aula claros en el Bloque 4.
+
+### Diapositiva 8 — El PEI y la conexión que ya conocemos: constructivismo y ZDP
+**Contenido:**
+- El PEI adopta explícitamente el modelo social-cognitivo y cita a Vygotsky y la Zona de Desarrollo Próxima
+- El PEI reconoce al docente como mediador que ofrece "apoyos provisionales" que se retiran progresivamente
+- Esta es la misma lógica de andamiaje que vimos en el Bloque 2 de la introducción, ahora con respaldo documental propio de la UNAB
+
+**Notas del narrador:**
+Aquí conectamos con algo que ya vimos en la introducción del curso. El Fundamento Pedagógico del PEI-UNAB no es una construcción externa que este curso les impone: adopta explícitamente los planteamientos del modelo social-cognitivo y reconoce que los estudiantes pueden tomar la zona de desarrollo próximo, entendida como la diferencia entre lo que un joven resuelve solo y lo que resuelve con ayuda de otros. El PEI habla, literalmente, de un proceso progresivo de apoyos provisionales que el docente retira a medida que el estudiante gana autonomía. Es decir, la metáfora del andamiaje cognitivo con la que titulamos este curso completo ya estaba presente en el PEI de la UNAB desde antes de que existiera la IA generativa.
+
+### Diapositiva 9 — El PEI y la flexibilidad curricular que hace posible este curso
+**Contenido:**
+- El PEI define la flexibilidad como consecuencia de su perspectiva estética y del desarrollo de competencias
+- Reconoce el uso de nuevas tecnologías como instrumentos de mediación del aprendizaje
+- La estrategia TEMA (Tecnologías para el Mejoramiento del Aprendizaje) ya contemplaba la incorporación de TIC en el aula
+
+**Notas del narrador:**
+El PEI también explica por qué este curso puede existir dentro de la estructura curricular de la UNAB sin generar fricción institucional. El documento asume la flexibilidad pedagógica con el uso de las nuevas tecnologías de la información y la comunicación como instrumentos de mediación del aprendizaje, reconociendo espacios y ambientes educativos diferentes al aula de clase tradicional. De hecho, la Universidad ya contaba con una estrategia llamada TEMA, Tecnologías de la Enseñanza para el Mejoramiento del Aprendizaje, que incorpora TIC en modo adjunto a las clases presenciales. La IA generativa no rompe con esta tradición institucional: la continúa y la actualiza, siempre bajo el mismo principio de que la tecnología sirve al desarrollo humano integral, no al revés.
+
+### Diapositiva 10 — Cierre y transición
+**Contenido:**
+- Síntesis: ya conocemos el marco institucional completo antes de escribir el primer prompt
+- Herramientas autorizadas, límites declarados, tres principios éticos, usos permitidos y no permitidos
+- Próximo video: la Taxonomía de Bloom aplicada con Gemini, primera herramienta práctica del curso
+
+**Notas del narrador:**
+Cerramos este video con el marco completo ya instalado: conocemos las herramientas de IA de acceso institucional y sus límites declarados, los tres principios éticos de responsabilidad, transparencia y equidad, los usos permitidos y no permitidos para estudiantes, y la raíz pedagógica propia del PEI que ya hablaba de andamiaje y flexibilidad antes de la IA generativa. Con este marco instalado, en el próximo video empezamos el trabajo verdaderamente práctico del curso: usar la Taxonomía de Bloom junto con Gemini for Education para diseñar actividades que escalen desde recordar y comprender hasta analizar, evaluar y crear. Los espero en el siguiente video.
+
+**Documentos de referencia de este video:**
+- Equipo IA UNAB. (2026). *Orientaciones académicas para el uso ético, responsable y transparente de la Inteligencia Artificial (IA)*. Universidad Autónoma de Bucaramanga.
+- Universidad Autónoma de Bucaramanga. (2012). *Proyecto Educativo Institucional* (3ª ed.). UNAB.
+
+---
+
+## VIDEO 1.2 — Taxonomía de Bloom con Gemini: escalar de recordar/comprender a analizar/evaluar/crear
+
+### Diapositiva 1 — De la teoría de la introducción a la herramienta concreta
+**Contenido:**
+- En la introducción revisamos la Taxonomía de Bloom en abstracto
+- Hoy: aplicarla directamente con Gemini for Education, herramienta institucional autorizada
+- Objetivo del video: salir con un criterio claro para escalar niveles cognitivos
+
+**Notas del narrador:**
+En el segundo bloque de la introducción de este curso revisamos la Taxonomía de Bloom como marco teórico. Hoy la aplicamos directamente con la herramienta que la UNAB ha puesto a nuestra disposición: Gemini for Education. El uso académico recomendado para Gemini, según las Orientaciones institucionales, incluye explícitamente la generación de ejemplos y el apoyo en la organización de ideas, siempre orientado a promover autonomía, creatividad y pensamiento crítico. Ese "siempre orientado a" no es opcional: es la condición que separa un uso de Gemini que suma valor pedagógico de uno que simplemente entrega respuestas. Vamos a ver, nivel por nivel, cómo lograrlo.
+
+### Diapositiva 2 — Por qué Gemini resuelve fácil los niveles bajos
+**Contenido:**
+- Recordar y comprender son los niveles donde Gemini aporta menos valor diferencial
+- Usarlo solo para "explicar" un tema deja al estudiante en un rol pasivo
+- La Good Future Foundation, citada en el documento institucional, advierte: identificar qué es exclusivamente humano y qué se puede transferir a la IA
+
+**Notas del narrador:**
+Las Orientaciones institucionales recogen una idea, citando a Richard Culatta en conversación con la Good Future Foundation, que resulta clave aquí: el profesor no debe ver la IA como una herramienta mágica, sino reconocer en qué actividades da mejores resultados que los seres humanos y en cuáles no. Recordar y comprender son, precisamente, los niveles donde Gemini rinde mejor y donde el estudiante aporta menos valor cognitivo propio. Si limitamos nuestro uso de Gemini a pedirle que "explique" un tema para que el estudiante lo lea, dejamos al estudiante en un rol pasivo y desaprovechamos la herramienta. El verdadero diseño instruccional empieza cuando decidimos escalar.
+
+### Diapositiva 3 — Diseñar el nivel "Analizar" con Gemini
+**Contenido:**
+- Pedirle a Gemini que genere dos posturas o interpretaciones distintas sobre un mismo tema disciplinar
+- La tarea del estudiante: identificar supuestos, tensiones y vacíos entre esas posturas
+- Ejemplo aplicable a cualquier facultad: ingeniería, ciencias sociales, salud, artes
+
+**Notas del narrador:**
+Para diseñar una actividad de nivel "analizar" con Gemini, la instrucción del docente puede pedirle a la herramienta que genere dos interpretaciones o posturas distintas sobre un mismo problema disciplinar. La tarea cognitiva real recae entonces en el estudiante: identificar los supuestos detrás de cada postura, señalar tensiones y detectar qué información falta para decidir cuál es más sólida. Este esquema funciona en cualquier facultad de la UNAB: en ingeniería, dos enfoques de solución a un problema técnico; en ciencias sociales, dos lecturas de un fenómeno; en salud, dos protocolos posibles frente a un caso. Gemini aporta el material de contraste; el estudiante aporta el análisis.
+
+### Diapositiva 4 — Diseñar el nivel "Evaluar" con Gemini
+**Contenido:**
+- Pedirle al estudiante que audite críticamente una respuesta generada por Gemini
+- Conecta directamente con la limitación institucional declarada: "puede generar información imprecisa o sesgada"
+- El estudiante practica exactamente la competencia que la UNAB exige: no asumir la IA como fuente definitiva
+
+**Notas del narrador:**
+El nivel "evaluar" tiene una aplicación casi natural con Gemini, porque se conecta directamente con la limitación que el propio documento institucional declara: la herramienta puede generar información imprecisa o sesgada. Podemos diseñar una actividad donde el estudiante reciba una respuesta de Gemini sobre un tema de su asignatura y su tarea sea auditarla críticamente: identificar afirmaciones sin respaldo, generalizaciones excesivas o desactualizaciones. Al hacerlo, el estudiante no solo practica pensamiento crítico disciplinar; practica exactamente la competencia que la UNAB exige de manera explícita: no asumir nunca la IA como fuente definitiva ni sustituir con ella el criterio humano. Es una actividad que enseña contenido y ética institucional al mismo tiempo.
+
+### Diapositiva 5 — Diseñar el nivel "Crear" con Gemini
+**Contenido:**
+- Gemini aporta ejemplos, borradores o exploración de posibilidades, nunca la decisión final
+- El estudiante debe declarar su aporte propio, como exige la nota de citación obligatoria
+- Ejemplo: usar Gemini para explorar tres enfoques posibles y exigir una propuesta original justificada
+
+**Notas del narrador:**
+En el nivel "crear", el uso recomendado de Gemini según las Orientaciones institucionales es precisamente el de apoyo en la generación de ejemplos y en la organización de ideas, no el de sustituto de la decisión final. Una actividad bien diseñada puede pedirle al estudiante que use Gemini para explorar rápidamente tres enfoques posibles frente a un problema de su disciplina, y luego exigirle una propuesta propia, original y justificada, que integre esa exploración de manera crítica. Recuerden que la nota institucional exige declarar qué aportó el estudiante frente a lo generado por la IA: análisis, decisiones, síntesis o verificación de fuentes. Diseñar la actividad pensando en esa declaración desde el inicio facilita enormemente la evaluación posterior.
+
+### Diapositiva 6 — Escalando: una secuencia completa de una sesión de clase
+**Contenido:**
+- Apertura: Gemini ayuda a comprender un concepto nuevo (nivel bajo, apoyo legítimo)
+- Desarrollo: el estudiante analiza y evalúa material generado por Gemini (nivel medio-alto)
+- Cierre: el estudiante crea una propuesta propia, con menor apoyo directo de la herramienta
+
+**Notas del narrador:**
+Veamos cómo se vería esto en una secuencia completa de una sola sesión de clase. En la apertura, Gemini ayuda a los estudiantes a comprender rápidamente un concepto nuevo mediante una explicación clara: esto es un apoyo legítimo en el nivel bajo de la taxonomía, útil para nivelar el punto de partida del grupo. En el desarrollo, los estudiantes analizan y evalúan críticamente material generado por Gemini, identificando sesgos o vacíos: aquí sube la exigencia cognitiva. En el cierre, cada estudiante o grupo crea una propuesta propia, con apoyo cada vez menor de la herramienta, demostrando autonomía. Esta secuencia respeta tanto el andamiaje del PEI como el escalamiento de Bloom.
+
+### Diapositiva 7 — Redactando el objetivo de aprendizaje con verbos precisos
+**Contenido:**
+- Evitar objetivos ambiguos como "que el estudiante conozca" o "que el estudiante entienda"
+- Usar verbos de la taxonomía revisada: analizar, contrastar, justificar, diseñar, crear
+- El objetivo declarado debe coincidir con lo que realmente exige la actividad diseñada con Gemini
+
+**Notas del narrador:**
+Un error frecuente al diseñar actividades con IA es redactar objetivos de aprendizaje ambiguos, como "que el estudiante conozca" o "que el estudiante entienda", que no permiten verificar si realmente se logró algo. La versión revisada de la Taxonomía de Bloom nos exige verbos de acción precisos: analizar, contrastar, justificar, diseñar, crear. Si el objetivo dice "el estudiante evaluará la validez de una respuesta generada por IA", la actividad debe efectivamente exigir esa evaluación, no simplemente pedir que la lea. Esta coherencia entre el verbo del objetivo y la exigencia real de la actividad será, como recordarán, uno de los criterios de la rúbrica de evaluación auténtica que trabajaremos en el Bloque 4.
+
+### Diapositiva 8 — Errores comunes al usar Gemini para diseño instruccional
+**Contenido:**
+- Pedirle a Gemini que "resuma" en lugar de pedirle que "contraste" o "problematice"
+- Aceptar la primera respuesta de Gemini sin refinarla con instrucciones más específicas
+- Olvidar declarar, en el material del curso, qué partes fueron apoyadas por IA
+
+**Notas del narrador:**
+Vale la pena nombrar tres errores comunes que hemos observado al integrar Gemini en el diseño instruccional. El primero es pedirle a Gemini tareas de bajo nivel cognitivo, como "resumir", cuando el objetivo real de la actividad apunta a un nivel superior; hay que pedirle explícitamente que contraste, que problematice, que genere tensión. El segundo es aceptar la primera respuesta de Gemini sin refinarla, cuando casi siempre una segunda instrucción más específica produce material de mucha mejor calidad pedagógica. El tercero, y el más importante desde la ética institucional, es olvidar declarar en el material del curso qué partes de la actividad fueron apoyadas por IA, incumpliendo el principio de transparencia que revisamos en el video anterior.
+
+### Diapositiva 9 — Conexión con la actividad autónoma de este bloque
+**Contenido:**
+- La actividad autónoma de este Bloque 1 es diseñar un prompt socrático para su asignatura
+- Ese prompt debe estar pensado, desde ya, para escalar hacia analizar/evaluar/crear
+- El framework RISEN, que veremos en el próximo video, es la herramienta técnica para lograrlo
+
+**Notas del narrador:**
+Todo lo que hemos revisado en este video prepara directamente la actividad autónoma de este primer bloque: el diseño de un prompt socrático para su propia asignatura. Ese prompt no puede limitarse a que Gemini entregue explicaciones; debe estar diseñado, desde su primera versión, para escalar la conversación hacia el análisis, la evaluación o la creación, dependiendo de lo que ustedes decidan como objetivo de aprendizaje. La pregunta que queda pendiente es técnica: ¿cómo se redacta exactamente una instrucción que logre este efecto, en lugar de una que simplemente pida una respuesta directa? Esa es la pregunta que responde el framework RISEN, que es el contenido íntegro de nuestro próximo video.
+
+### Diapositiva 10 — Cierre y transición
+**Contenido:**
+- Síntesis: Gemini rinde mejor en niveles bajos; el diseño docente debe empujar hacia niveles altos
+- Los objetivos deben redactarse con verbos precisos y coherentes con la actividad real
+- Próximo video: el framework RISEN para diseñar Tutores Socráticos
+
+**Notas del narrador:**
+Cerramos este video con una idea central: Gemini rinde mejor, de forma natural, en los niveles bajos de la Taxonomía de Bloom, y es tarea nuestra, como diseñadores instruccionales, empujar deliberadamente hacia los niveles de analizar, evaluar y crear, donde el estudiante aporta lo que la máquina no puede aportar. Vimos también cómo redactar objetivos de aprendizaje coherentes con esa exigencia. En el próximo video damos el siguiente paso técnico: aprenderemos el framework RISEN, una estructura concreta para redactar prompts pedagógicos que conviertan a Gemini en un Tutor Socrático, capaz de guiar mediante preguntas en lugar de entregar respuestas directas. Los espero en el siguiente video.
+
+**Documentos de referencia de este video:**
+- Equipo IA UNAB. (2026). *Orientaciones académicas para el uso ético, responsable y transparente de la Inteligencia Artificial (IA)*. Universidad Autónoma de Bucaramanga.
+- Gonsalves, C. (2024). Generative AI's impact on critical thinking: Revisiting Bloom's taxonomy. *Journal of Marketing Education*. https://doi.org/10.1177/02734753241305980
+
+---
+
+## VIDEO 1.3 — Prompting Pedagógico (Framework RISEN): diseño de «Tutores Socráticos»
+
+### Diapositiva 1 — De saber qué queremos a saber cómo pedirlo
+**Contenido:**
+- Ya sabemos hacia qué nivel de Bloom queremos escalar
+- Falta la técnica concreta para instruir a Gemini de forma que lo logre
+- Framework del curso: RISEN, diseñado para el prompting pedagógico
+
+**Notas del narrador:**
+En el video anterior definimos hacia dónde queremos escalar: analizar, evaluar, crear. Pero saber hacia dónde apuntar no basta si no sabemos cómo redactar la instrucción que efectivamente lo logre. Un prompt mal formulado, aunque tenga buenas intenciones pedagógicas, terminará generando una respuesta directa y cerrada, exactamente lo que queremos evitar. Para resolver esto, este curso propone el framework RISEN, una estructura de cinco componentes diseñada específicamente para el prompting pedagógico en contextos con IA generativa. Vamos a recorrer cada componente y a aplicarlo al diseño de lo que llamamos un Tutor Socrático.
+
+### Diapositiva 2 — Qué es un Tutor Socrático y por qué lo necesitamos
+**Contenido:**
+- Un Tutor Socrático es una configuración de IA que guía mediante preguntas, no entrega respuestas directas
+- Recupera la tradición de Vygotsky y el andamiaje que revisamos en la introducción
+- Es la aplicación práctica más directa del principio de "andamio cognitivo" que da nombre al curso
+
+**Notas del narrador:**
+Un Tutor Socrático es una configuración específica de la IA generativa diseñada para guiar al estudiante mediante preguntas progresivas, en lugar de entregarle la respuesta final de inmediato. Esta idea recupera directamente la tradición de Vygotsky y el concepto de andamiaje que revisamos con detalle en el segundo bloque de la introducción de este curso: un tutor experimentado no resuelve el problema por el estudiante, ofrece el apoyo justo para que el estudiante avance un paso más de lo que podría solo. Diseñar un Tutor Socrático es, en la práctica, la aplicación más directa y concreta del principio de "andamio cognitivo" que da nombre a todo este programa.
+
+### Diapositiva 3 — RISEN: Rol
+**Contenido:**
+- Primer componente: definir con precisión el ROL que asumirá la IA
+- No es lo mismo "sé un profesor" que "sé un tutor socrático de física que nunca da la respuesta directa"
+- El rol determina el estilo de toda la conversación posterior
+
+**Notas del narrador:**
+El primer componente de RISEN es el Rol. No basta con indicarle a Gemini que "sea un profesor"; esa instrucción es demasiado vaga y la herramienta tenderá, por defecto, a explicar y resolver. Un rol bien definido para un Tutor Socrático se vería así: "Actúa como un tutor socrático de física de fluidos que nunca entrega la respuesta final de manera directa, que siempre responde con una pregunta que ayude al estudiante a avanzar un paso en su propio razonamiento". Noten la precisión: se define la disciplina, el estilo pedagógico y, sobre todo, la restricción explícita de no entregar respuestas directas. Ese "nunca" es lo que activa el comportamiento socrático.
+
+### Diapositiva 4 — RISEN: Instrucciones e Información de contexto
+**Contenido:**
+- Instrucciones: qué debe hacer paso a paso la IA durante la conversación
+- Información de contexto: nivel del estudiante, tema específico, material previo visto en clase
+- Sin contexto, el Tutor Socrático generará preguntas genéricas, poco útiles pedagógicamente
+
+**Notas del narrador:**
+El segundo y tercer componentes son las Instrucciones y la Información de contexto. Las instrucciones describen paso a paso el comportamiento esperado: por ejemplo, "cuando el estudiante responda incorrectamente, no lo corrijas de inmediato; hazle una pregunta que lo ayude a notar su propio error". La información de contexto añade los datos que Gemini necesita para no generar preguntas genéricas: el nivel del estudiante, el tema específico que se está trabajando, y qué contenido ya se vio en clase. Sin este contexto, el Tutor Socrático hará preguntas correctas en abstracto pero desconectadas del momento formativo real del estudiante, perdiendo buena parte de su valor pedagógico.
+
+### Diapositiva 5 — RISEN: Ejemplos
+**Contenido:**
+- Cuarto componente: mostrarle a la IA uno o dos ejemplos concretos de la interacción esperada
+- Un ejemplo de pregunta socrática "buena" evita que Gemini caiga en preguntas cerradas tipo sí/no
+- Los ejemplos son la forma más efectiva de calibrar el estilo exacto que buscamos
+
+**Notas del narrador:**
+El cuarto componente, los Ejemplos, es quizás el más subestimado y el más efectivo. Mostrarle a Gemini uno o dos ejemplos concretos de cómo se ve una buena pregunta socrática en su asignatura calibra el estilo de manera mucho más precisa que cualquier descripción abstracta. Por ejemplo: "Si el estudiante dice que la presión es constante en todo el fluido, no respondas 'eso es incorrecto'; en su lugar, pregunta: ¿qué ocurriría con la presión si aumentamos la profundidad del fluido?". Este ejemplo evita que la IA caiga en preguntas cerradas de sí o no, y la orienta hacia preguntas que realmente exigen razonamiento por parte del estudiante.
+
+### Diapositiva 6 — RISEN: Restricciones (Narrowing)
+**Contenido:**
+- Quinto componente: las restricciones explícitas que delimitan lo que la IA NO debe hacer
+- Ejemplo clave: "nunca reveles la respuesta final, aunque el estudiante insista o se frustre"
+- Las restricciones conectan directamente con los usos no permitidos de las Orientaciones IA-UNAB
+
+**Notas del narrador:**
+El quinto componente de RISEN son las restricciones, lo que en inglés se conoce como "narrowing": los límites explícitos de lo que la IA no debe hacer bajo ninguna circunstancia. Para un Tutor Socrático, la restricción más importante suele ser: "nunca reveles la respuesta final de manera directa, incluso si el estudiante insiste, se frustra o pide explícitamente la solución completa". Esta restricción conecta directamente con algo que vimos en el primer video de este bloque: las Orientaciones IA-UNAB advierten que presentar como propio un trabajo generado por IA sin contribución sustancial sustituye el aprendizaje en lugar de potenciarlo. Un buen Tutor Socrático es, en sí mismo, una salvaguarda contra ese riesgo.
+
+### Diapositiva 7 — Ejemplo completo de un prompt RISEN
+**Contenido:**
+- Rol: tutor socrático de [disciplina] que nunca da respuestas directas
+- Instrucciones + Contexto: nivel del curso, tema específico, comportamiento ante errores
+- Ejemplos + Restricciones: modelo de buena pregunta y prohibición explícita de resolver
+
+**Notas del narrador:**
+Veamos cómo se ve un prompt RISEN completo, integrando los cinco componentes en un solo texto que ustedes podrán adaptar a su propia asignatura: "Actúa como un tutor socrático de [su disciplina] para estudiantes de [nivel del curso]. Cuando el estudiante plantee una duda o dé una respuesta incorrecta, nunca entregues la respuesta final directamente; en su lugar, formula una pregunta que lo ayude a avanzar un paso en su razonamiento. Por ejemplo, si pregunta [ejemplo típico de su curso], respóndele con una pregunta como [modelo de buena pregunta socrática]. Nunca reveles la solución completa, incluso si el estudiante insiste o expresa frustración; en ese caso, ofrece una pista más específica, pero siempre en forma de pregunta." Este es, esencialmente, el punto de partida de la actividad autónoma de hoy.
+
+### Diapositiva 8 — Probar y ajustar: el prompt nunca queda perfecto a la primera
+**Contenido:**
+- El primer intento de prompt casi siempre necesita ajustes tras probarlo
+- Simular una conversación de estudiante para verificar que el Tutor Socrático se mantiene fiel al rol
+- Este ciclo de prueba y ajuste es Diseño Basado en Aprendizaje aplicado a su propio prompt
+
+**Notas del narrador:**
+Es importante que sepan, desde ya, que el primer intento de un prompt RISEN casi nunca queda perfecto. Les recomendamos simular ustedes mismos una breve conversación de estudiante, planteando preguntas típicas y errores comunes de su asignatura, para verificar que el Tutor Socrático realmente se mantiene fiel al rol y no "se le escapa" la respuesta directa en algún punto de la conversación. Si esto ocurre, refuercen la restricción o añadan un ejemplo más específico. Este ciclo de probar, observar el resultado y ajustar es, exactamente, el Diseño Basado en Aprendizaje que revisamos en la introducción del curso, ahora aplicado a la construcción de su propio prompt, no solo a la del curso en general.
+
+### Diapositiva 9 — Actividad autónoma: diseño de un prompt socrático para su asignatura
+**Contenido:**
+- Entregable del Bloque 1: un prompt RISEN completo, aplicado a un tema específico de su curso
+- Debe incluir los cinco componentes: Rol, Instrucciones, Contexto, Ejemplos, Restricciones
+- Se compartirá en el foro de reflexión de este bloque para recibir retroalimentación de un colega
+
+**Notas del narrador:**
+Llegamos a la actividad autónoma de este primer bloque temático: el diseño de un prompt socrático completo para un tema específico de su propia asignatura, usando la estructura RISEN que acabamos de recorrer. Su entregable debe incluir, de manera identificable, los cinco componentes: Rol, Instrucciones, Información de contexto, Ejemplos y Restricciones. Recuerden probarlo ustedes mismos antes de darlo por terminado, simulando al menos dos o tres interacciones típicas de un estudiante. Una vez listo, lo compartirán en el foro de reflexión de este bloque, donde recibirán observaciones de un colega docente y, a su vez, comentarán el prompt de otro participante, cerrando así el ciclo de retroalimentación que caracteriza el diseño de este curso.
+
+### Diapositiva 10 — Cierre y transición
+**Contenido:**
+- Síntesis: RISEN convierte la intención pedagógica en una instrucción técnica precisa
+- El Tutor Socrático es la materialización más directa del andamiaje cognitivo con IA
+- Próximo video: curaduría de contenidos y detección de sesgos, cierre del Bloque 1
+
+**Notas del narrador:**
+Cerramos este video con una síntesis: el framework RISEN nos permite traducir una intención pedagógica clara —que la IA guíe en lugar de resolver— en una instrucción técnica precisa que Gemini efectivamente puede seguir de manera consistente. El Tutor Socrático que acaban de diseñar es la materialización más directa del concepto de andamiaje cognitivo que da nombre a todo este curso. En el último video de este bloque cerraremos con un tema que conecta directamente con los principios éticos institucionales que revisamos al inicio: la curaduría de contenidos generados por IA y la detección de sesgos académicos. Los espero en el siguiente video.
+
+**Documentos de referencia de este video:**
+- Equipo IA UNAB. (2026). *Orientaciones académicas para el uso ético, responsable y transparente de la Inteligencia Artificial (IA)*. Universidad Autónoma de Bucaramanga.
+- Wood, D., Bruner, J. S., & Ross, G. (1976). The role of tutoring in problem solving. *Journal of Child Psychology and Psychiatry*, 17(2), 89–100.
+
+---
+
+## VIDEO 1.4 — Curaduría de contenidos generados por IA y detección de sesgos académicos
+
+### Diapositiva 1 — Cerrando el bloque con una competencia transversal
+**Contenido:**
+- Último video del Bloque 1: curaduría de contenidos y detección de sesgos
+- Esta competencia atraviesa todo lo diseñado hasta ahora: Bloom, RISEN, Tutor Socrático
+- Conecta directamente con la equidad, uno de los tres principios éticos institucionales
+
+**Notas del narrador:**
+Cerramos el primer bloque de este curso con una competencia que, en realidad, atraviesa todo lo que hemos construido hasta ahora: la curaduría crítica de contenidos generados por IA y la detección de sesgos académicos. Ya sea que estemos escalando hacia el nivel "evaluar" de Bloom, o verificando que nuestro Tutor Socrático no revele información incorrecta, siempre necesitamos esta habilidad de fondo. Este video conecta, además, directamente con uno de los tres principios éticos institucionales que revisamos al inicio del bloque: la equidad, que exige reconocer y mitigar los sesgos algorítmicos que puedan generar discriminación o exclusión.
+
+### Diapositiva 2 — ¿Qué es un sesgo algorítmico, según la definición institucional?
+**Contenido:**
+- Definición del glosario institucional: distorsión o error sistemático que genera discriminación o desigualdad
+- Se origina generalmente en la selección o calidad de los datos de entrenamiento
+- No es un defecto ocasional: es una característica estructural de estos sistemas
+
+**Notas del narrador:**
+El glosario de las Orientaciones institucionales define con precisión el sesgo algorítmico como una distorsión o error sistemático en los resultados de un sistema de IA que genera discriminación o desigualdad, debido generalmente a la selección o calidad de los datos con los que ese sistema fue entrenado. Es importante entender que esto no es un defecto ocasional que aparece de vez en cuando: es una característica estructural de cómo funcionan estos sistemas, entrenados con enormes cantidades de texto que no representan de manera equilibrada todas las culturas, idiomas y perspectivas del mundo. Para nosotros, docentes en Bucaramanga y Colombia, esto tiene una relevancia muy concreta que veremos a continuación.
+
+### Diapositiva 3 — Sesgos con relevancia directa para nuestro contexto colombiano
+**Contenido:**
+- Riesgo de respuestas que privilegian perspectivas anglosajonas o de países con mayor producción digital
+- Invisibilización de matices culturales, históricos o disciplinares propios de Santander y Colombia
+- Responsabilidad docente: complementar activamente con fuentes y perspectivas locales
+
+**Notas del narrador:**
+En nuestro contexto específico, este sesgo suele traducirse en respuestas que privilegian perspectivas anglosajonas o de países con mayor producción digital de contenido, invisibilizando matices culturales, históricos, jurídicos o disciplinares propios de Colombia y de nuestra región de Santander. Si le preguntamos a Gemini sobre un marco normativo, una práctica profesional o un contexto social, la respuesta por defecto puede reflejar realidades de otros países sin advertirlo. La responsabilidad docente aquí es concreta: complementar activamente esas respuestas con fuentes y perspectivas locales, verificadas, en lugar de aceptar la salida de la IA como neutral o universalmente válida por defecto.
+
+### Diapositiva 4 — El fenómeno de la "alucinación": otra forma de contenido no confiable
+**Contenido:**
+- Definición institucional: información factualmente incorrecta o inexistente, presentada con aparente confianza
+- Distinto del sesgo, pero igualmente peligroso si no se detecta
+- Requiere verificación humana sistemática de los contenidos producidos por modelos de lenguaje
+
+**Notas del narrador:**
+Además del sesgo, existe otro fenómeno que el glosario institucional define con precisión: la alucinación, entendida como el fenómeno por el cual un sistema de IA genera información factualmente incorrecta, inexistente o sin respaldo, presentada con aparente confianza. Es distinto del sesgo, pero igual de peligroso, porque la IA no titubea ni señala su propia incertidumbre: presenta datos inventados con el mismo tono seguro que presenta datos correctos. El documento institucional es explícito: esta es una limitación relevante que requiere la verificación humana de los contenidos producidos por modelos de lenguaje, sin excepción. Ninguna cita, dato o referencia generada por IA debe darse por válida sin verificación.
+
+### Diapositiva 5 — Curaduría paso a paso: un protocolo simple para el aula
+**Contenido:**
+- Paso 1: identificar afirmaciones específicas, verificables (fechas, cifras, nombres, citas)
+- Paso 2: contrastar esas afirmaciones con al menos una fuente confiable independiente
+- Paso 3: ajustar o descartar el contenido de la IA antes de usarlo en clase
+
+**Notas del narrador:**
+Propongamos un protocolo simple de curaduría que pueden aplicar antes de usar cualquier contenido generado por IA en su clase. Primer paso: identifiquen las afirmaciones específicas y verificables dentro del texto generado, como fechas, cifras, nombres propios o citas de autores. Segundo paso: contrasten esas afirmaciones puntuales con al menos una fuente confiable independiente, como un libro de texto, un artículo indexado o su propio conocimiento experto de la disciplina. Tercer paso: ajusten o descarten el contenido que no supere esa verificación, antes de presentarlo a sus estudiantes. Este protocolo, aplicado sistemáticamente, es la forma más concreta de cumplir con el principio de responsabilidad institucional del que hablamos al inicio del bloque.
+
+### Diapositiva 6 — Enseñar curaduría a los estudiantes, no solo practicarla nosotros
+**Contenido:**
+- La curaduría no debe quedar reservada al docente: es una competencia que los estudiantes también necesitan
+- Diseñar actividades donde el estudiante mismo practique la verificación de contenido de IA
+- Conecta con el nivel "evaluar" de Bloom que trabajamos en el segundo video de este bloque
+
+**Notas del narrador:**
+Es importante que esta competencia de curaduría no quede reservada exclusivamente a nosotros como docentes: nuestros estudiantes también necesitan desarrollarla, porque van a seguir usando estas herramientas mucho después de terminar nuestra asignatura. Podemos diseñar actividades donde el estudiante mismo aplique este protocolo de verificación sobre contenido generado por IA, identificando afirmaciones dudosas y buscando fuentes que las confirmen o las refuten. Como recordarán, esto conecta directamente con el nivel "evaluar" de la Taxonomía de Bloom que trabajamos en el segundo video de este bloque: enseñar curaduría crítica es, en la práctica, una de las formas más efectivas de trabajar ese nivel cognitivo superior con apoyo de IA.
+
+### Diapositiva 7 — Curaduría y NotebookLM: un adelanto del Bloque 2
+**Contenido:**
+- NotebookLM reduce el riesgo de alucinación al anclar las respuestas en fuentes específicas
+- No lo elimina por completo: sigue siendo necesario verificar que cite correctamente esas fuentes
+- Es la herramienta que trabajaremos a fondo en el próximo bloque del curso
+
+**Notas del narrador:**
+Ya mencionamos brevemente esta idea en la introducción del curso, pero vale la pena reforzarla aquí: NotebookLM, que trabajaremos a fondo en el Bloque 2, reduce significativamente el riesgo de alucinación porque ancla sus respuestas en las fuentes documentales específicas que el docente le suministra, en lugar de generar contenido libremente. Esto no elimina por completo la necesidad de curaduría: seguirá siendo necesario verificar que la herramienta esté citando correctamente esas fuentes y no generando interpretaciones erróneas incluso a partir de material confiable. Pero sí reduce considerablemente la carga de verificación, comparado con el uso abierto de Gemini. Este adelanto les servirá para entender mejor por qué el Bloque 2 tiene tanto peso en este curso.
+
+### Diapositiva 8 — Clasificación de riesgo institucional: bajo, medio y alto
+**Contenido:**
+- Riesgo bajo: ideación, ejemplos, práctica guiada, apoyo en corrección de estilo
+- Riesgo medio: síntesis de información, coedición de trabajos, retroalimentación automatizada
+- Riesgo alto: evaluación automatizada de alto impacto, decisiones que afecten trayectorias académicas
+
+**Notas del narrador:**
+Las Orientaciones institucionales ofrecen una clasificación de riesgo que resulta muy útil para decidir cuánta curaduría aplicar en cada situación. El riesgo bajo comprende usos de apoyo general que no sustituyen decisiones formativas sustanciales, como ideación, ejemplos o práctica guiada. El riesgo medio comprende usos que intervienen más directamente en la producción académica, como la síntesis de información o el apoyo a procesos de retroalimentación, que requieren mayor transparencia y validación. El riesgo alto comprende usos que pueden afectar significativamente trayectorias académicas o derechos de las personas, como la evaluación automatizada de alto impacto, que exige supervisión humana obligatoria y control reforzado. Esta clasificación institucional será clave cuando diseñemos evaluación en el Bloque 4.
+
+### Diapositiva 9 — Aplicando la clasificación a lo que diseñamos en este bloque
+**Contenido:**
+- El prompt socrático diseñado hoy corresponde, en general, a riesgo bajo o medio
+- Su nivel de curaduría debe ser proporcional: revisión activa, pero no exhaustiva
+- Este criterio de proporcionalidad evita tanto la negligencia como el agotamiento docente
+
+**Notas del narrador:**
+Apliquemos esta clasificación a lo que ustedes diseñaron en este mismo bloque: el prompt socrático corresponde, en general, a un uso de riesgo bajo o medio, según el tema que estén trabajando, porque su función es de acompañamiento formativo y no de evaluación sumativa de alto impacto. Esto significa que el nivel de curaduría requerido debe ser proporcional: revisión activa de que el Tutor Socrático se comporte según lo diseñado, pero no una verificación exhaustiva línea por línea como exigiría un contenido de riesgo alto. Este criterio de proporcionalidad, que retomaremos en el Bloque 4, evita tanto la negligencia de no revisar nada como el agotamiento docente de revisarlo absolutamente todo con el mismo nivel de rigor.
+
+### Diapositiva 10 — Cierre del Bloque 1 y transición al Bloque 2
+**Contenido:**
+- Síntesis del bloque completo: marco institucional, Bloom con Gemini, RISEN, curaduría y sesgos
+- Entregable completado: un prompt socrático diseñado, probado y listo para compartir en el foro
+- Próximo bloque: NotebookLM y el Aprendizaje Basado en Evidencia
+
+**Notas del narrador:**
+Con este video cerramos el primer bloque completo de nuestro curso. Recorrimos el marco institucional de los Lineamientos IA-UNAB y el PEI, aplicamos la Taxonomía de Bloom junto con Gemini for Education, diseñamos un Tutor Socrático con el framework RISEN, y cerramos con la curaduría crítica de contenidos y la detección de sesgos, ahora clasificados según el riesgo institucional. Su entregable de este bloque, el prompt socrático, ya debería estar diseñado, probado y compartido en el foro de reflexión correspondiente. En el siguiente bloque de nuestro curso trabajaremos con NotebookLM para construir el Cerebro Digital de su asignatura, anclado en evidencia bibliográfica verificada. Los espero en el Bloque 2.
+
+**Documentos de referencia de este video:**
+- Equipo IA UNAB. (2026). *Orientaciones académicas para el uso ético, responsable y transparente de la Inteligencia Artificial (IA)*. Universidad Autónoma de Bucaramanga.
+- Bittle, K., & El-Gayar, O. (2025). Generative AI and academic integrity in higher education: A systematic review and research agenda. *Information*, 16(4), 296. https://doi.org/10.3390/info16040296
+
+---
+---
 ---
 
 # 🔹 PRESENTACIÓN 1
